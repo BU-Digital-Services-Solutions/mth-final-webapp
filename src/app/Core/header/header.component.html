@@ -1,0 +1,24 @@
+<header>
+  <mat-toolbar class="mat-toolbar header">
+    <mat-toolbar-row>
+      <div class="logo">
+        <a routerLink="" *ngIf="sidenavState">
+          <img src=".\assets\Images\logos\logo.svg" width="80%" height="100%">
+        </a>
+        <a routerLink="" *ngIf="!sidenavState">
+          <img src=".\assets\Images\logos\sub-logo.svg" width="100%" height="100%">
+        </a>
+      </div>
+      <ng-content></ng-content>
+      <span class="example-spacer"></span>
+      <div class="toolbar-right">
+        <div class="navbar-list">
+          <button mat-icon-button>
+            <p>PS</p>
+          </button>
+        </div>  
+      </div>
+    </mat-toolbar-row>
+
+  </mat-toolbar>
+</header>

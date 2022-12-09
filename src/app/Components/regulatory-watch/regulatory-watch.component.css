@@ -1,0 +1,49 @@
+.regulatory-watch{
+    background-color: #F9F9F9;
+}
+mat-grid-tile{
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    opacity: 1;
+}
+mat-grid-tile-header .rw-headding{
+    color: #0F67AD;
+    opacity: 1;
+    font-size:21px;
+    font-family: ubuntu;
+    margin: 8px 0 12px;    
+} 
+.dates{
+    color: #303030;
+    opacity: 1;
+    font-size: 14px;
+    font-family: ubuntu;
+    padding-top: 10px;
+}
+.content1{
+    color: #0F67AD;
+    opacity: 1;
+    font-size: 18px;
+    font-family: ubuntu;
+    padding-top: 10px;
+
+
+}
+.content2{
+    color: #303030;
+    opacity: 1;
+    font-size: 14px;
+    font-family: ubuntu;
+    margin-top: 18px;
+    padding-top: 10px;
+
+}
+.main-list{
+    margin: 10px 0px; 
+}
+.knowmore{
+    color: #0F67AD;
+    font-size: 14px;
+    font-family: Ubuntu;
+
+}

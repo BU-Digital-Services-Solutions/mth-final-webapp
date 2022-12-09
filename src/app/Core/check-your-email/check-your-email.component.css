@@ -1,0 +1,21 @@
+.check-your-email .check-your-email-bg{
+    background-color: #FFFFFF;
+    border: 1px solid #E0DCE3;
+    border-radius: 15px;
+    opacity: 1;
+    }
+.check-your-email .check-your-email-bg .check-your-email-headding{
+    background-color: transparent;
+    color: #009CA6;
+    opacity: 1;
+}
+.asdf{
+    text-align: center;
+    color: #303030;
+    opacity: 0.82;
+    
+}
+.send-again{
+    text-decoration: none;
+    color: #20518D;
+}

@@ -1,0 +1,14 @@
+.by-tag{
+  background-color: #F9F9F9;
+  padding: 0px 15px;
+}
+mat-grid-tile {
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+:host ::ng-deep .mat-grid-tile-content {
+  right: 151px;
+}
+.search-headding{
+  color:#081D2D;opacity:1;font-size: 18px;font-family: Ubuntu;padding-left: 100px
+}

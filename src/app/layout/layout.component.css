@@ -1,0 +1,11 @@
+mat-sidenav-container,
+mat-sidenav
+mat-sidenav-content {
+     height: 100%; 
+} 
+mat-sidenav {
+    position: fixed; 
+    background: transparent linear-gradient(165deg, #0F67AD 0%, #0D5995 37%, #032D4E 100%) 0% 0% no-repeat padding-box;
+     top: 64px; 
+    width: 250.01px;
+}

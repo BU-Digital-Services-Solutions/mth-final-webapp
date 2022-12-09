@@ -1,0 +1,26 @@
+<app-home-header></app-home-header>
+<div>
+<div class="login" fxLayoutAlign="center center" id="bg">
+<mat-card fxFlex="25" class="login-bg">
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form"
+    [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-toolbar class="login-headding" fxLayoutAlign="center center">
+          <p>Login to Cyientify</p>
+        </mat-toolbar>
+        <mat-form-field appearance="outline">
+          <input type="email" matInput placeholder="Enter your Email ID" formControlName="email">
+          <mat-icon matSuffix>alternate_email</mat-icon>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <input type="password" matInput placeholder="Enter your Password" formControlName="password">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+        </mat-form-field>
+        <mat-toolbar class="asdf">
+            <a [routerLink]="'/forgot-password'" class="forgot-password">Forgot Password?</a>
+            <span class="example-spacer"></span>
+            <button mat-raised-button class="login-btn" type="submit" id="bg-btn">Login</button>
+        </mat-toolbar>
+      </form>    
+</mat-card>
+</div>
+</div>

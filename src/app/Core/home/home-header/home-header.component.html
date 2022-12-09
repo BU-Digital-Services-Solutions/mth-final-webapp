@@ -1,0 +1,14 @@
+<mat-toolbar class="login-hedder">
+  <div class="headder-logo">    
+      <img src=".\assets\Images\logos\logo.svg" width="100%" height="100%">
+  </div>
+    <span class="example-spacer" ></span>
+    <div fxLayout="row" fxLayoutGap="10px" class="headder-butns">
+        <button mat-raised-button class="register-btn" id="bg-btn" >
+          <a [routerLink]="'/login'"class="register">Login</a>
+        </button>      
+      <button mat-raised-button class="register-btn" id="bg-btn">
+        <a [routerLink]="'/register'"class="register">Register</a>
+      </button>  
+    </div>
+</mat-toolbar>

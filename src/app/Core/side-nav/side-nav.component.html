@@ -1,0 +1,93 @@
+<mat-nav-list role="list" class="side-nav-content" >
+      <mat-list-item>
+        <mat-icon class="mat-icon" >          
+          <img src=".\assets\Images\icons\dashboard-svgrepo-com.svg" class="side-nav-icons">
+        </mat-icon>
+        <span>
+          <a role="listitem"
+          routerLink="/layout/dashboard"
+           routerLinkActive="active" 
+           [routerLinkActiveOptions]="{exact:true}" >
+           Dashboard         
+         </a> 
+        </span>
+      </mat-list-item> 
+        <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon>
+          <img src=".\assets\Images\icons\badge-svgrepo-com.svg" class="side-nav-icons">
+        </mat-icon>
+        <span>
+          <a role="listitem"
+         [routerLink]="'/layout/regulations'" 
+         routerLinkActive="active">
+          Regulations          
+        </a>
+        </span>
+      </mat-list-item>
+         <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>
+            <img src=".\assets\Images\icons\badge-svgrepo-com.svg" class="side-nav-icons">
+          </mat-icon>
+          <span>
+            <a role="listitem"
+            [routerLink]="'/layout/standards'" 
+            routerLinkActive="active">
+            Standards
+           </a>   
+          </span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>
+            <img src=".\assets\Images\icons\safety-111.svg" class="side-nav-icons">
+          </mat-icon>
+          <span>
+            <a  role="listitem" 
+            [routerLink]="'/layout/regulatory-compliance'" 
+            routerLinkActive="active">
+            Regulatory Compliance
+            </a>  
+          </span>  
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>
+            <img src=".\assets\Images\icons\bulb-48.svg" class="side-nav-icons">
+          </mat-icon>
+          <span>
+            <a role="listitem"
+            [routerLink]="'/layout/regulatory-intelligence'" 
+            routerLinkActive="active">
+            Regulatory Intelligence
+            </a>    
+          </span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>
+            <img src=".\assets\Images\icons\regulatory watch.svg" class="side-nav-icons">
+          </mat-icon>
+          <span>
+            <a role="listitem" 
+            [routerLink]="'/layout/regulatory-watch'" 
+            routerLinkActive="active">
+            Regulatory Watch
+           </a>    
+          </span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <mat-icon>
+            <img src=".\assets\Images\icons\settings-svgrepo-com (3).svg" class="side-nav-icons">
+          </mat-icon>
+          <span>
+            <a role="listitem" 
+            [routerLink]="'/layout/settings'" 
+            routerLinkActive="active">
+            Settings
+           </a>    
+          </span>
+        </mat-list-item>
+</mat-nav-list> 

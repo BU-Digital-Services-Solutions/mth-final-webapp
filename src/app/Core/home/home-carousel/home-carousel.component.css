@@ -1,0 +1,115 @@
+.asdf {
+    height: 600px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+    background-image: url("src\assets\Images\background-imgs\bg.png");
+    background-repeat: no-repeat;
+  }
+  .asdf .radiobtn{
+    margin-top: -100px;
+  }
+  main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  div.item {
+    position: absolute;
+    width: 280px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-0deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+    align-items: center;
+
+  }  
+  div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: #FFFFFF;
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #FFFFFF;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #FFFFFF;
+  }  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }  
+  .headding{
+    color: #0F67AD;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    top: 363px;
+left: 543px;
+  }
+  .content{
+    top: 412px;
+left: 518px;
+height: 92px;
+width: 270px;
+text-align: center;
+color: #505050;
+opacity: 1;
+  }
+  .knowmore-btn{
+    color: #0F67AD;
+    border-radius: 21px;
+    border: 1px solid #0F67AD;
+}
+.item .img1{
+  padding:20px 98px;
+}
+.item .img2{
+  padding:20px 70px;
+}
+.item .img3{
+  padding:20px 98px;
+}
+.knowmore-btn{
+    margin: 10px 80px; 
+}

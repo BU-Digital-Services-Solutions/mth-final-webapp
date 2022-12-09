@@ -1,0 +1,34 @@
+/* .mat-list-base .mat-list-item {
+  color: #b6e5ff;
+  height: 50px;
+} */
+
+  /* background-image: url("src\assets\Images\icons\dashboard-svgrepo-com.svg"); */
+/* background-repeat: no-repeat; */
+  
+  /* :host ::ng-deep .mat-list-option:hover,
+  :host ::ng-deep .mat-list-option:focus,
+  :host ::ng-deep .mat-nav-list .mat-list-item:hover,
+  :host ::ng-deep .mat-nav-list .mat-list-item:focus,
+  :host ::ng-deep .mat-action-list .mat-list-item:hover,
+  :host ::ng-deep .mat-action-list .mat-list-item:focus{
+   background-color: #FFFFFF;
+   opacity: 1;
+   color: #0F67AD;
+   border-radius: 30px 0px 0px 30px;
+   width: 100%;
+   background-image: url("src\assets\Images\icons\zooming-svgrepo-com.svg");
+   background-repeat: no-repeat;
+   
+  } */
+  /* :host ::ng-deep .svgicon :hover{
+    color: #0F67AD;
+
+  } */
+  .mat-icon{
+    padding-right: 20px;
+  }
+  .side-nav-content a{
+    color: #FFFFFF;
+    opacity: 0.82;
+  }

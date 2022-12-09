@@ -1,0 +1,17 @@
+<app-header [sidenavState]="sidenav.opened">
+  <button mat-icon-button (click)="sidenav.toggle();sideNavStateBind()" >
+      <mat-icon>menu</mat-icon>
+  </button>
+</app-header>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened>
+      <app-side-nav ></app-side-nav>
+  </mat-sidenav>
+  <mat-sidenav-content style="padding: 16px;">
+      <main class="sidenav-content">
+          <div class="main-content">
+              <router-outlet></router-outlet>
+          </div>
+      </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,21 @@
+.header{
+    background-color: #FFFFFF; 
+}
+.header .mat-toolbar{
+background-color: #FFFFFF; 
+position: fixed;
+top: 0px;
+right: 0px;
+left: 0px;
+z-index: 2;
+}
+ .example-spacer {
+    flex: 1 1 auto;
+  }  
+.toolbar-right{
+    text-decoration: none;
+    color: #0F67AD;
+    background-color: #F2F6FA;
+    border-radius: 30px;
+    font-size: medium;
+} 

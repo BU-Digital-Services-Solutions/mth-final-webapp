@@ -1,0 +1,28 @@
+ table {
+    width: 100%;
+  }
+  .standard-tbl-headding{
+    color: #1C3A5F;
+    font-size: 15px;
+    font-family:Ubuntu;
+    background-color: #E9F0F4;
+  }
+  table tr:nth-child(even){
+    background-color: #E9F0F4;
+  }
+  .example-spacer {
+
+padding-left: 112px;  }  
+  td{
+    color:#292B2B;
+    opacity: 100%;
+    font-size: 14px;
+    font-family: Ubuntu;
+  }
+  th.mat-header-cell, td.mat-cell {
+    padding: 16px;
+    border-bottom-style: none;
+  }
+  .mat-elevation-z8 {
+    box-shadow: none;
+  }

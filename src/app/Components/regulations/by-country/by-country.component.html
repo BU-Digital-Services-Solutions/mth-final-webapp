@@ -1,0 +1,87 @@
+<mat-grid-list cols="2" rowHeight="60px">
+   <mat-grid-tile-header>
+      <div style="margin: 20px 0px;">
+      <mat-label style="color:#081D2D;opacity:1;font-size: 15px;font-family: Ubuntu;padding-right: 7px;">All documents listed below are published by the regulatory authority in their official language.</mat-label>               
+         <button mat-raised-button type="submit" id="bg-btn" style="color:white;margin-top:5px; margin-right:5px;padding-left:10px;">Add Regulation</button>
+         <button mat-raised-button type="submit" id="bg-btn" style="color:white; margin-right: 5px;">Import Regulation</button>       
+      </div> 
+   </mat-grid-tile-header>
+     </mat-grid-list> 
+   <mat-grid-list cols="2" rowHeight="250px">
+      <mat-grid-tile >
+         <div rows="4">
+            <div>
+               <mat-label style="color:#081D2D;opacity:1;font-size: 18px;font-family: Ubuntu; margin-bottom: 100px;">Select a country on map or from dropdown</mat-label>               
+               <mat-form-field appearance="outline" style="width:404px;">
+                  <select matNativeControl required>
+                    <option value="volvo">European Union</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </mat-form-field>   
+            </div>
+            <div>
+               <mat-label style="color:#081D2D;opacity:1;font-size: 18px;font-family: Ubuntu;">Search Standard</mat-label>               
+               <mat-form-field appearance="outline" style="width:404px;">
+                 <input matInput placeholder="Search" (keyup)="applyFilter($event)">
+                 <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+               </mat-form-field>    
+            </div>
+                  </div>
+      </mat-grid-tile>
+      <mat-grid-tile class="map">
+         <img src="./assets/Images/world.svg" width="100%" height="200px">
+      </mat-grid-tile>
+   </mat-grid-list>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="margin-top:20px;">
+    <ng-container matColumnDef="select">
+       <th mat-header-cell *matHeaderCellDef class="byc-tbl-headding">
+          <mat-checkbox (change)="$event ? toggleAllRows() : null"
+          [checked]="selection.hasValue() && isAllSelected()"
+          [indeterminate]="selection.hasValue() && !isAllSelected()"
+          [aria-label]="checkboxLabel()">
+          </mat-checkbox>
+       </th>
+       <td mat-cell *matCellDef="let row">
+          <mat-checkbox (click)="$event.stopPropagation()"
+          (change)="$event ? selection.toggle(row) : null"
+          [checked]="selection.isSelected(row)"
+          [aria-label]="checkboxLabel(row)">
+          </mat-checkbox>
+       </td>
+    </ng-container>
+    <ng-container matColumnDef="DocumentName">
+       <th mat-header-cell *matHeaderCellDef style="width:700px;" class="byc-tbl-headding"> DocumentName </th>
+       <td mat-cell *matCellDef="let element" style="width:500px;"> {{element.Document_Name}} </td>
+    </ng-container>
+    <ng-container matColumnDef="Imported">
+       <th mat-header-cell *matHeaderCellDef class="byc-tbl-headding"> Imported </th>
+       <td mat-cell *matCellDef="let element" style="text-align: center;">
+          <a href="{{element.Imported}}" >
+          <img src=".\assets\Images\icons\documentimport.svg">
+          </a> 
+       </td>
+    </ng-container>
+    <ng-container matColumnDef="ViewSource">
+       <th mat-header-cell *matHeaderCellDef class="byc-tbl-headding"> ViewSource </th>
+       <td mat-cell *matCellDef="let element" style="text-align: center;"> 
+          <a href="{{element.View_Source}} ">
+          <img src=".\assets\Images\icons\show.svg">
+          </a>
+       </td>
+    </ng-container>
+    <ng-container matColumnDef="edit">
+       <th mat-header-cell *matHeaderCellDef class="byc-tbl-headding"> 
+          <img src=".\assets\Images\icons\delete.svg">
+       </th>
+       <td mat-cell *matCellDef="let element">
+          <img src=".\assets\Images\icons\edit.svg">
+       </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+    (click)="selection.toggle(row)">
+    </tr>
+ </table>

@@ -1,0 +1,15 @@
+.login-hedder{
+    background-color: #FFFFFF;
+  }
+  .headder-logo{
+    width: 180px;
+    padding-top: 5px;
+
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .register-btn .register{
+  text-decoration: none;
+  color:#FFFFFF ;
+  }
